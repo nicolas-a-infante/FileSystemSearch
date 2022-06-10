@@ -1,0 +1,118 @@
+Here is the initial file structure of testdir
+testdir/:
+total 16
+62523169 drwxr-xr-x. 4 ninfante domain users 4096 May  3 22:09 .
+62523213 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:11 ..
+62523172 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:09 dir1
+62523173 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:09 dir3
+62523170 -rw-r--r--. 1 ninfante domain users    0 May  3 22:11 test1
+62523171 -rw-r--r--. 1 ninfante domain users    0 May  3 22:09 test2
+
+testdir/dir1:
+total 12
+62523172 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:09 .
+62523169 drwxr-xr-x. 4 ninfante domain users 4096 May  3 22:09 ..
+62523176 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:09 dir2
+62523174 -rw-r--r--. 1 ninfante domain users    0 May  3 22:09 test3
+62523175 -rw-r--r--. 1 ninfante domain users    0 May  3 22:11 test4
+
+testdir/dir1/dir2:
+total 8
+62523176 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:09 .
+62523172 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:09 ..
+62523177 -rw-r--r--. 1 ninfante domain users    0 May  3 22:09 test5
+62523178 -rw-r--r--. 1 ninfante domain users    0 May  3 22:09 test6
+
+testdir/dir3:
+total 8
+62523173 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:09 .
+62523169 drwxr-xr-x. 4 ninfante domain users 4096 May  3 22:09 ..
+62523179 -rw-r--r--. 1 ninfante domain users    0 May  3 22:11 test7
+62523180 -rw-r--r--. 1 ninfante domain users    0 May  3 22:09 test8
+
+Here are all the path-names of each file/directory
+testdir/dir1
+testdir/dir1/dir2
+testdir/dir1/dir2/test6
+testdir/dir1/dir2/test5
+testdir/dir1/test3
+testdir/dir1/test4
+testdir/test1
+testdir/dir3
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/test2
+
+Here are the path names of specific files/directories found using '-name'
+testdir/test1
+testdir/test2
+testdir/dir1/test3
+testdir/dir1/test4
+testdir/dir1/dir2/test5
+testdir/dir1/dir2/test6
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/dir1
+testdir/dir1/dir2
+testdir/dir3
+
+Here are the path names of specific files/directories found based on their modified time
+
+Less than 10 minutes ago:
+testdir/dir1
+testdir/dir1/dir2
+testdir/dir1/dir2/test6
+testdir/dir1/dir2/test5
+testdir/dir1/test3
+testdir/dir1/test4
+testdir/test1
+testdir/dir3
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/test2
+
+Exactly 10 minutes ago
+
+More than 10 minutes ago
+
+Here are the path names of specific files/directories found based on their i-nodes
+testdir/dir1
+testdir/dir1/test3
+testdir/dir1/dir2/test5
+
+The following files have been deleted
+testdir/dir1/dir2/test6
+testdir/dir1
+testdir/dir1/dir2
+testdir/dir1/dir2/test5
+testdir/dir1/test3
+testdir/dir1/test4
+testdir/test1
+testdir/dir3
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/test2
+
+Here is the resulting file structure of testdir
+testdir/:
+total 16
+62523169 drwxr-xr-x. 4 ninfante domain users 4096 May  3 22:11 .
+62523213 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:11 ..
+62523172 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:11 dir1
+62523173 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:11 dir3
+
+testdir/dir1:
+total 12
+62523172 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:11 .
+62523169 drwxr-xr-x. 4 ninfante domain users 4096 May  3 22:11 ..
+62523176 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:11 dir2
+
+testdir/dir1/dir2:
+total 8
+62523176 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:11 .
+62523172 drwxr-xr-x. 3 ninfante domain users 4096 May  3 22:11 ..
+
+testdir/dir3:
+total 8
+62523173 drwxr-xr-x. 2 ninfante domain users 4096 May  3 22:11 .
+62523169 drwxr-xr-x. 4 ninfante domain users 4096 May  3 22:11 ..
